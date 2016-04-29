@@ -14,7 +14,7 @@
 
 (defn base-layout [& children]
   [:div
-   [ui/AppBar {:title              "Avalon"
+   [ui/AppBar {:title              "Moriarty's Machinations"
                :onTitleTouchTap    #(accountant/navigate! "/")
                :zDepth             0
                :showMenuIconButton false}]

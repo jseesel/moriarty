@@ -23,7 +23,7 @@
      [:meta {:charset "utf-8"}]
      [:meta {:name "viewport"
              :content "width=device-width, initial-scale=1"}]
-     [:title "Avalon"]
+     [:title "Moriarty's Machinations"]
      ;(include-css "https://fonts.googleapis.com/icon?family=Material+Icons")
      (if (env :dev)
        (include-css "css/site.css" "css/app.css")
@@ -43,7 +43,7 @@
     moriarty.api.groups/routes
     moriarty.api.games/routes
     moriarty.api.people/routes)
-  
+
   (resources "/")
   (not-found "Not Found"))
 

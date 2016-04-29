@@ -37,7 +37,7 @@
       [:div.text-center
        [row
         [col
-         [:h3 "Welcome to Avalon!"]]]
+         [:h3 "Welcome to Moriarty's Machinations!"]]]
        [row
         [col
          (if-not (:joining @state)

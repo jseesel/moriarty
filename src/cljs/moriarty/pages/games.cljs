@@ -87,10 +87,6 @@
                                     :onTouchTap    #(delete-player! id player)}]
                     player]])]
                [ui/ListDivider]
-               [ui/List {:subheader "Roles"}
-                (for [role ["Merlin" "Percival" "Mordred" "Morgana" "Oberon" "Lancelot" "Twins"]]
-                  ^{:key role}
-                  [ui/ListItem [role-toggle id roles role]])]
                [row
                 [:div.col-xs-8.col-xs-offset-2.start-btn {:style {:margin-bottom "40px"}}
                  [ui/RaisedButton {:primary    true

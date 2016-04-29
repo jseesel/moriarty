@@ -57,9 +57,9 @@ goog.require('goog.string.TypedString');
  * that the SafeStyleSheet does not contain unsafe script. Note in particular
  * that {@code &lt;} is dangerous, even when inside CSS strings, and so should
  * always be forbidden or CSS-escaped in user controlled input. For example, if
- * {@code &lt;/style&gt;&lt;script&gt;evil&lt;/script&gt;"} were interpolated
+ * {@code &lt;/style&gt;&lt;script&gt;cop&lt;/script&gt;"} were interpolated
  * inside a CSS string, it would break out of the context of the original
- * style element and {@code evil} would execute. Also note that within an HTML
+ * style element and {@code cop} would execute. Also note that within an HTML
  * style (raw text) element, HTML character references, such as
  * {@code &amp;lt;}, are not allowed. See
  * http://www.w3.org/TR/html5/scripting-1.html#restrictions-for-contents-of-script-elements

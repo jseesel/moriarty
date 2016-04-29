@@ -61,7 +61,7 @@ goog.require('goog.string.TypedString');
  * A SafeStyle may never contain literal angle brackets. Otherwise, it could
  * be unsafe to place a SafeStyle into a &lt;style&gt; tag (where it can't
  * be HTML escaped). For example, if the SafeStyle containing
- * "{@code font: 'foo &lt;style/&gt;&lt;script&gt;evil&lt;/script&gt;'}" were
+ * "{@code font: 'foo &lt;style/&gt;&lt;script&gt;cop&lt;/script&gt;'}" were
  * interpolated within a &lt;style&gt; tag, this would then break out of the
  * style context into HTML.
  *
@@ -80,7 +80,7 @@ goog.require('goog.string.TypedString');
  * a value of {@code background:url("} or {@code font-} would not satisfy the
  * SafeStyle contract. This is because concatenating such strings with a
  * second value that itself does not contain unsafe CSS can result in an
- * overall string that does. For example, if {@code javascript:evil())"} is
+ * overall string that does. For example, if {@code javascript:cop())"} is
  * appended to {@code background:url("}, the resulting string may result in
  * the execution of a malicious script.
  *
