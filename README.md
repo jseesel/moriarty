@@ -1,6 +1,6 @@
-# Avalon
+# Moriarty
 
-An avalon web app for starting the game and keeping stats, built in Clojure, ClojureScript, and Reagent.
+A Moriarty's Machinations web app for starting the game and keeping stats, built in Clojure, ClojureScript, and Reagent.
 
 ## Installation
 
