@@ -1,0 +1,12 @@
+html * {
+    font-family: Roboto, sans-serif;
+}
+
+.start-btn {
+    display: block;
+    margin-top: 20px;
+}
+
+.player {
+    margin-left: 20px;
+}
