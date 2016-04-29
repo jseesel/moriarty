@@ -1,8 +1,8 @@
 (ns user
-  (:require [avalon.models.groups :as groups]
-            [avalon.models.people :as people]
-            [avalon.models.games :as games]
-            [avalon.models.crud :as crud]
+  (:require [moriarty.models.groups :as groups]
+            [moriarty.models.people :as people]
+            [moriarty.models.games :as games]
+            [moriarty.models.crud :as crud]
             [clojure.pprint :refer [pprint]]))
 
 (defn fill-test-data [n]

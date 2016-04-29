@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/avalon.jar clojure.main -m avalon.server
+web: java $JVM_OPTS -cp target/moriarty.jar clojure.main -m moriarty.server

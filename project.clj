@@ -1,6 +1,6 @@
-(defproject avalon "0.1.0"
-  :description "An Avalon web app for starting the game and keeping stats"
-  :url "https://github.com/baritonehands/avalon"
+(defproject moriarty "0.1.0"
+  :description "A moriarty's machinations web app for starting the game and keeping stats"
+  :url "https://github.com/jseesel/moriarty"
   :license {:name "Apache License, v2.0"
             :url "http://www.apache.org/licenses/"}
 
@@ -25,7 +25,7 @@
                  [secretary "1.2.3"]
                  [venantius/accountant "0.1.5"
                   :exclusions [org.clojure/tools.reader]]
-                 
+
                  ]
 
   :plugins [[lein-environ "1.0.1"]
@@ -33,14 +33,14 @@
             [lein-asset-minifier "0.2.2"
              :exclusions [org.clojure/clojure]]]
 
-  :ring {:handler avalon.handler/app
-         :uberwar-name "avalon.war"}
+  :ring {:handler moriarty.handler/app
+         :uberwar-name "moriarty.war"}
 
   :min-lein-version "2.5.0"
 
-  :uberjar-name "avalon.jar"
+  :uberjar-name "moriarty.jar"
 
-  :main avalon.server
+  :main moriarty.server
 
   :clean-targets ^{:protect false} [:target-path
                                     [:cljsbuild :builds :app :compiler :output-dir]
@@ -62,7 +62,7 @@
                                         :optimizations :none
                                         :pretty-print  true}}}}
 
-  :profiles {:dev {:repl-options {:init-ns avalon.repl}
+  :profiles {:dev {:repl-options {:init-ns moriarty.repl}
 
                    :dependencies [[ring/ring-mock "0.3.0"]
                                   [ring/ring-devel "1.4.0"]
@@ -95,7 +95,7 @@
                                            org.clojure/core.async
                                            org.clojure/tools.analyzer.jvm]]
                              [org.clojure/clojurescript "1.7.170"]
-                             
+
                              [com.cemerick/clojurescript.test "0.3.3"]]
 
                    :injections [(require 'pjstadig.humane-test-output)
@@ -107,12 +107,12 @@
                               :nrepl-middleware ["cemerick.piggieback/wrap-cljs-repl"
                                                  ]
                               :css-dirs ["resources/public/css"]
-                              :ring-handler avalon.handler/app}
+                              :ring-handler moriarty.handler/app}
 
                    :env {:dev true}
 
                    :cljsbuild {:builds {:app {:source-paths ["env/dev/cljs"]
-                                              :compiler {:main "avalon.dev"
+                                              :compiler {:main "moriarty.dev"
                                                          :source-map true}}
                                         :test {:source-paths ["src/cljs" "src/cljc" "test/cljs"]
                                                :compiler {:output-to "target/test.js"
