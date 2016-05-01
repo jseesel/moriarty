@@ -41,14 +41,14 @@
         cop-roles #{:sherlock :lestrade :watson :mycroft}
         cop (get-people cop-roles teams)]
     (condp = role
-      :sherlock (concat (get-people #{:lestrade :watson} teams) (get-people #{:brutus} teams))
+      :sherlock (concat (get-people #{:watson} teams) (get-people #{:lestrade} teams) (get-people #{:brutus} teams))
       :moriarty (get-people #{:lestrade :watson} teams)
       :lestrade #{}
       :moran (get-people #{:moriarty} teams)
       :judge (get-people #{:brutus} teams)
       :ripper #{}
       :irene (get-people #{:sherlock} teams)
-      :watson (get-people #{:watson} teams)
+      :watson (get-people #{:sherlock} teams)
       :brutus #{}
       :mycroft (get-people #{:brutus} teams))))
 

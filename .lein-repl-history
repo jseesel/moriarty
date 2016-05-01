@@ -6,3 +6,7 @@
 (play-roles "gsky")
 (crud/all games/games)
 (pprint (crud/all games/games))
+(play-roles "gsky")
+(play-roles "gzjm")
+(fill-test-data 9)
+(play-roles "txys")
