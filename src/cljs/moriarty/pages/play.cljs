@@ -42,8 +42,8 @@
 
   (defn goodbad [total]
     (cond
-      (#{6 8 10} total) [:h5 "There are " [:strong (get [3 3 4 4 5 5] (- total 5))] " robbers and " [:strong (get [2 2 3 4 4 4] (- total 5))] " cops and "[:strong "1"]" Irene Adler in this game."]
-      :else [:h5 "There are " [:strong (get [3 3 4 4 5 5] (- total 5))] " robbers and " [:strong (get [2 2 3 4 4 4] (- total 5))] " cops in this game."])
+      (#{6 8 10} total) [:h5 "There are " [:strong (get [3 3 4 4 5 5] (- total 5))] " robbers and " [:strong (get [2 2 3 3 4 4] (- total 5))] " cops and "[:strong "1"]" Irene Adler in this game."]
+      :else [:h5 "There are " [:strong (get [3 3 4 4 5 5] (- total 5))] " robbers and " [:strong (get [2 2 3 3 4 4] (- total 5))] " cops in this game."])
   )
 
 (defn view-list [info]
@@ -51,7 +51,7 @@
     [:div
      [:div
       (cond
-        (= role "sherlock") [:h5 "This player is Inspector Lestrade:"]
+        (= role "sherlock") [:h5 "This player is Doctor Watson:"]
         (= role "moriarty") [:h5 "This player are Lestrade and Watson:"]
         (= role "moran") [:h5 "This player is Moriarty:"]
         (#{"judge" "mycroft"} role) [:h5 "This player is Brutus:"]
@@ -61,7 +61,7 @@
      (if (and (= role "sherlock")
               (> (:player-count info) 6))
        [:div {:style {:padding-top "10px"}}
-        [:h5 "This player is Doctor Watson:"]
+        [:h5 "This player is Inspector Lestrade:"]
         [:div.player (first (second (:info info)))]
         [:h5 "This player is Brutus:"]
         [:div.player (first (nth (:info info) 2))]])]))
