@@ -23761,10 +23761,10 @@
 	  spacing: Spacing,
 	  fontFamily: 'Roboto, sans-serif',
 	  palette: {
-	    primary1Color: Colors.blue500,
-	    primary2Color: Colors.blue700,
+	    primary1Color: Colors.lightGreen600,
+	    primary2Color: Colors.lightGreen800,
 	    primary3Color: Colors.grey400,
-	    accent1Color: Colors.redA200,
+	    accent1Color: Colors.blueA200,
 	    accent2Color: Colors.grey100,
 	    accent3Color: Colors.grey500,
 	    textColor: Colors.darkBlack,

@@ -1,2 +1,0 @@
-;; Analyzed by ClojureScript 1.7.170
-{:name moriarty.dev, :doc nil, :excludes #{}, :use-macros nil, :require-macros {figwheel figwheel.client, figwheel.client figwheel.client}, :uses nil, :requires {core moriarty.core, moriarty.core moriarty.core, figwheel figwheel.client, figwheel.client figwheel.client}, :imports nil, :cljs.analyzer/constants {:seen #{:jsload-callback :websocket-url}, :order [:websocket-url :jsload-callback]}}
